@@ -1,0 +1,32 @@
+{
+  "name": "@shikeik/eruda-indexeddb",
+  "version": "1.0.0",
+  "description": "Fork of eruda-indexeddb with enhanced native-style UI",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "eruda",
+    "indexeddb",
+    "debug"
+  ],
+  "author": "shikeik",
+  "license": "MIT",
+  "peerDependencies": {
+    "eruda": ">=3.0.0"
+  },
+  "devDependencies": {
+    "eruda": "^3.4.3",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
