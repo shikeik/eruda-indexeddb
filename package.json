@@ -1,15 +1,18 @@
 {
   "name": "@shikeik/eruda-indexeddb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fork of eruda-indexeddb with enhanced native-style UI",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "unpkg": "dist/eruda-indexeddb.min.js",
+  "jsdelivr": "dist/eruda-indexeddb.min.js",
+  "browser": "dist/eruda-indexeddb.min.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && rollup -c",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -27,8 +30,13 @@
     "eruda": ">=3.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
     "eruda": "^3.4.3",
-    "typescript": "^5.0.0"
+    "rollup": "^4.60.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
   },
   "publishConfig": {
     "access": "public"
