@@ -19,6 +19,10 @@
   ],
   "author": "shikeik",
   "license": "MIT",
+  "dependencies": {
+    "idb": "^8.0.0",
+    "luna-data-grid": "^2.0.0"
+  },
   "peerDependencies": {
     "eruda": ">=3.0.0"
   },
