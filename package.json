@@ -1,6 +1,6 @@
 {
   "name": "@shikeik/eruda-indexeddb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fork of eruda-indexeddb with enhanced native-style UI",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
